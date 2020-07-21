@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Kapture Price"
+  },
+  "default": {
+    "waiting": "waiting for loot..",
+    "questions": "questions / ideas?",
+    "discord": "join the discord server"
+  },
+  "actions": {
+    "view-loot": "View Loot",
+    "reset-loot": "Reset Loot",
+    "load-sample-data": "Load Sample Data",
+    "reset-all": "Reset All",
+    "reset": "Reset",
+    "save": "Save"
+  },
+  "views": {
+    "general-style": "General Style",
+    "numbers": "Number Format",
+    "advanced": "Advanced"
+  },
+  "settings": {
+    "abbreviate-numbers": "Abbreviate Numbers",
+    "precision": "Precision",
+    "digit-sep": "Digit Separator",
+    "decimal-sep": "Decimal Separator",
+    "language": "Language",
+    "font-color": "Font Color",
+    "opacity": "Opacity",
+    "logging": "Enable Logging",
+    "always-show-splash": "Always Show Splash",
+    "show-discord": "Show Discord Info"
+  },
+  "table": {
+    "name": "Name",
+    "vendor": "Vendor",
+    "mb-average": "MB Avg"
+  }
+}

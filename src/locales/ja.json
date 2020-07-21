@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Kapture価格チェック"
+  },
+  "default": {
+    "waiting": "出会いを待っています..",
+    "questions": "質問/アイデア？",
+    "discord": "discordサーバーに参加"
+  },
+  "actions": {
+    "view-loot": "戦利品を見る",
+    "reset-loot": "戦利品をリセット",
+    "load-sample-data": "サンプルデータの読み込み",
+    "reset-all": "すべてリセット",
+    "reset": "リセット",
+    "save": "保存"
+  },
+  "views": {
+    "general-style": "一般的なスタイル",
+    "numbers": "数値形式",
+    "advanced": "高度"
+  },
+  "settings": {
+    "abbreviate-numbers": "数字を省略",
+    "precision": "精度",
+    "digit-sep": "桁区切り",
+    "decimal-sep": "小数点区切り",
+    "language": "言語",
+    "font-color": "フォント色",
+    "opacity": "不透明度",
+    "logging": "ロギングを有効にします",
+    "always-show-splash": "常にウェルカムを表示",
+    "show-discord": "DISCORD情報を表示"
+  },
+  "table": {
+    "name": "名前",
+    "vendor": "ベンダー",
+    "mb-average": "MB平均"
+  }
+}

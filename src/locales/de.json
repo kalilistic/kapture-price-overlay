@@ -1,0 +1,40 @@
+{
+  "header": {
+    "title": "Kapture Preis"
+  },
+  "default": {
+    "waiting": "warten auf begegnung...",
+    "questions": "fragen / ideen?",
+    "discord": "tritt dem zwietracht-server bei"
+  },
+  "actions": {
+    "view-loot": "Beute zurücksetzen",
+    "reset-loot": "Beute zurücksetzen",
+    "load-sample-data": "Alle zurücksetzen",
+    "reset-all": "Alles zurücksetzen",
+    "reset": "Zurücksetzen",
+    "save": "Speichern"
+  },
+  "views": {
+    "general-style": "Allgemeiner Stil",
+    "numbers": "Zahlenformat",
+    "advanced": "Fortgeschrittene"
+  },
+  "settings": {
+    "abbreviate-numbers": "Abkürzungsnummern",
+    "precision": "Präzision",
+    "digit-sep": "Ziffernabscheider",
+    "decimal-sep": "Dezimaltrennzeichen",
+    "language": "Sprache",
+    "font-color": "Schriftfarbe",
+    "opacity": "Opazität",
+    "logging": "Aktiviere das Logging",
+    "always-show-splash": "Splash immer anzeigen",
+    "show-discord": "Discord Info anzeigen"
+  },
+  "table": {
+    "name": "Name",
+    "vendor": "Verkäuferin",
+    "mb-average": "MB Mittlere"
+  }
+}
