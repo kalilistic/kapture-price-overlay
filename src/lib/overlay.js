@@ -12,9 +12,11 @@ export async function addLootDataListener(context) {
     log("raw lootData", data);
     let lootData = parseLootData(data);
     log("parsed lootData", lootData);
-    context.$store.commit("updatePriceCheck", lootData);
-    if (context.$router.currentRoute.path === "/") {
-      context.$router.push("/price");
+    if (lootData != null) {
+      context.$store.commit("updatePriceCheck", lootData);
+      if (context.$router.currentRoute.path === "/") {
+        context.$router.push("/price");
+      }
     }
   });
 }
