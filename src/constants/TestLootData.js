@@ -58,6 +58,26 @@ let TestLootData = [
         }
       }
     }
+  },
+  {
+    message: {
+      kaptureEvent: {
+        eventType: "ObtainLoot",
+        item: {
+          id: 25191,
+          properName: "Wolf Robe",
+          vendorBuyPrice: "6760",
+          isHQ: false,
+          marketBoard: {
+            lastUploadTime: "1594812357364",
+            listingsCount: 0,
+            averagePrice: null,
+            averagePriceNQ: null,
+            averagePriceHQ: null
+          }
+        }
+      }
+    }
   }
 ];
 

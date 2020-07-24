@@ -5,7 +5,7 @@ export function formatNumber(number) {
   let decimalSep =
     store.getters.decimalSeps[store.state.settings.decimalSepId].sep;
 
-  if (!isNumber(number) || number === 0 || number === "0") {
+  if (number == null || !isNumber(number) || number === 0 || number === "0") {
     return "---";
   }
   if (shouldAbbreviate(number)) {
