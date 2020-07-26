@@ -13,7 +13,11 @@ export function AddTestLootData(context) {
 }
 
 export function parseLootData(data) {
-  if (data["message"]["kaptureEvent"]["eventType"] !== "ObtainLoot") return;
+  if (
+    data["message"]["kaptureEvent"]["eventType"] !== "ObtainLoot" &&
+    data["message"]["kaptureEvent"]["eventType"] !== "SearchLoot"
+  )
+    return;
   if (data["message"]["kaptureEvent"]["item"]["marketBoard"] === null) return;
   let lootData = {
     itemName: data["message"]["kaptureEvent"]["item"]["properName"],

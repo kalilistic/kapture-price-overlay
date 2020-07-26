@@ -42,7 +42,7 @@ let TestLootData = [
   {
     message: {
       kaptureEvent: {
-        eventType: "ObtainLoot",
+        eventType: "SearchLoot",
         item: {
           id: 25191,
           properName: "Gatherer's Guerdon Materia VII",
