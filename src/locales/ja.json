@@ -18,6 +18,7 @@
   "views": {
     "general-style": "一般的なスタイル",
     "numbers": "数値形式",
+    "filters": "フィルター",
     "advanced": "高度"
   },
   "settings": {
@@ -25,6 +26,8 @@
     "precision": "精度",
     "digit-sep": "桁区切り",
     "decimal-sep": "小数点区切り",
+    "max-items": "最大アイテム",
+    "exclude-dupes": "デュープを除外",
     "language": "言語",
     "font-color": "フォント色",
     "opacity": "不透明度",
@@ -32,9 +35,10 @@
     "always-show-splash": "常にウェルカムを表示",
     "show-discord": "DISCORD情報を表示"
   },
-  "table": {
-    "name": "名前",
-    "vendor": "ベンダー",
-    "mb-average": "MB平均"
+  "price": {
+    "last-updated": "最終更新",
+    "vendor-price": "ベンダー",
+    "daily-sales": "毎日の販売",
+    "listing-count": "リスト数"
   }
 }

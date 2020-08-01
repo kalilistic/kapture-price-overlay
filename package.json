@@ -18,7 +18,9 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.27.0"
+  },
   "devDependencies": {
     "@ctrl/tinycolor": "^3.1.1",
     "@mdi/font": "^5.1.45",

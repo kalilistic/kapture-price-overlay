@@ -35,6 +35,10 @@ export default {
           path: "/settings/numbers"
         },
         {
+          title: this.$t("views.filters"),
+          path: "/settings/filters"
+        },
+        {
           title: this.$t("views.advanced"),
           path: "/settings/advanced"
         }
@@ -66,6 +70,7 @@ export default {
 
 <style scoped lang="scss">
 .settings-menu-style {
+  @extend .default-border;
   @extend .no-spacing;
   padding: 0.8em 1.4em 0.8em 1.4em;
   font-size: 0.8rem;

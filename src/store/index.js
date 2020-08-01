@@ -3,7 +3,7 @@ import Vuex from "vuex";
 import VuexPersistence from "vuex-persist";
 import { settings } from "./settings";
 import { validValues } from "./validValues";
-import { lootData } from "./lootData";
+import { priceData } from "./priceData";
 
 Vue.use(Vuex);
 
@@ -15,7 +15,7 @@ const vuexLocal = new VuexPersistence({
 
 export default new Vuex.Store({
   modules: {
-    lootData: lootData,
+    priceData: priceData,
     validValues: validValues,
     settings: settings
   },

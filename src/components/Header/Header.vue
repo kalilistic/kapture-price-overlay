@@ -5,6 +5,7 @@
         <Title />
         <v-row>
           <v-col class="column header-menus">
+            <Toggle />
             <SettingsMenu />
             <PriceMenu />
           </v-col>
@@ -18,9 +19,11 @@
 import Title from "./Title/Title";
 import SettingsMenu from "./SettingsMenu/SettingsMenu";
 import PriceMenu from "./PriceMenu/PriceMenu";
+import Toggle from "./Toggle/Toggle";
 export default {
   name: "Header",
   components: {
+    Toggle,
     PriceMenu,
     Title,
     SettingsMenu
@@ -37,6 +40,7 @@ export default {
 
 <style scoped lang="scss">
 .header-container {
+  @extend .default-border;
 }
 .column {
   @extend .no-spacing;

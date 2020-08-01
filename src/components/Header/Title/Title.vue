@@ -14,7 +14,7 @@ export default {
 <style scoped lang="scss">
 .header-title {
   @extend .align-left;
-  max-width: 50%;
+  max-width: 70%;
   font-size: 16px !important;
   font-family: "Lato, serif" !important;
   margin-left: 0.35em;

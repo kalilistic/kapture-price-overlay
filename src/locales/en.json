@@ -18,6 +18,7 @@
   "views": {
     "general-style": "General Style",
     "numbers": "Number Format",
+    "filters": "Filters",
     "advanced": "Advanced"
   },
   "settings": {
@@ -25,6 +26,8 @@
     "precision": "Precision",
     "digit-sep": "Digit Separator",
     "decimal-sep": "Decimal Separator",
+    "max-items": "Max Items",
+    "exclude-dupes": "Exclude Dupes",
     "language": "Language",
     "font-color": "Font Color",
     "opacity": "Opacity",
@@ -32,9 +35,10 @@
     "always-show-splash": "Always Show Splash",
     "show-discord": "Show Discord Info"
   },
-  "table": {
-    "name": "Name",
-    "vendor": "Vendor",
-    "mb-average": "MB Avg"
+  "price": {
+    "last-updated": "Last Updated",
+    "vendor-price": "Vendor",
+    "daily-sales": "Daily Sales",
+    "listing-count": "Listing Count"
   }
 }

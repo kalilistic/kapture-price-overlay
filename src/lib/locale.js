@@ -1,5 +1,6 @@
 import store from "../store";
 import { getLanguageId } from "./overlay";
+import moment from "moment";
 
 export function setLocale(context) {
   let languages = store.getters.languages;
@@ -12,4 +13,5 @@ export function setLocale(context) {
   } else {
     context.$root.$i18n.locale = language.locale;
   }
+  moment.locale(context.$root.$i18n.locale);
 }

@@ -1,21 +1,21 @@
 <template>
-  <v-menu bottom left class="lootLog-menu">
+  <v-menu bottom left class="prices-menu">
     <template v-slot:activator="{ on }">
       <div
-        class="lootLog-menu-icon"
-        :style="lootLogMenuIconStyle"
-        v-html="lootLogMenuIcon"
+        class="prices-menu-icon"
+        :style="pricesMenuIconStyle"
+        v-html="pricesMenuIcon"
         v-on="on"
       ></div>
     </template>
-    <v-list class="lootLog-menu-style" :style="lootLogMenuStyle">
+    <v-list class="prices-menu-style" :style="pricesMenuStyle">
       <v-list-item
-        class="lootLog-menu-item"
+        class="prices-menu-item"
         v-for="(menuItem, i) in menuItems"
         :key="i"
         @click="selectMenuItem(menuItem)"
       >
-        <v-list-item-title :style="lootLogMenuStyle">{{
+        <v-list-item-title :style="pricesMenuStyle">{{
           menuItem.title
         }}</v-list-item-title>
       </v-list-item>
@@ -24,32 +24,32 @@
 </template>
 
 <script>
-import { AddTestLootData } from "../../../lib/lootData";
+import { AddTestPriceData } from "../../../lib/priceData";
 
 export default {
   name: "PriceMenu",
   computed: {
     menuItems() {
       return [
-        { title: this.$t("actions.view-loot"), path: "/price" },
+        { title: this.$t("actions.view-loot"), path: "/prices" },
         { title: this.$t("actions.reset-loot"), path: "/" },
         {
           title: this.$t("actions.load-sample-data"),
           action: "loadSampleData",
-          path: "/price"
+          path: "/prices"
         }
       ];
     },
-    lootLogMenuIcon() {
+    pricesMenuIcon() {
       return this.$store.getters.menuIcon;
     },
-    lootLogMenuStyle() {
+    pricesMenuStyle() {
       return {
         backgroundColor: this.$store.state.settings.backgroundColor,
         color: this.$store.state.settings.fontColor
       };
     },
-    lootLogMenuIconStyle() {
+    pricesMenuIconStyle() {
       return {
         fill: this.$store.state.settings.fontColor
       };
@@ -66,22 +66,23 @@ export default {
       }
     },
     loadSampleData() {
-      AddTestLootData(this);
+      AddTestPriceData(this);
     }
   }
 };
 </script>
 
 <style scoped lang="scss">
-.lootLog-menu-style {
+.prices-menu-style {
+  @extend .default-border;
   @extend .no-spacing;
   padding: 0.8em 1.4em 0.8em 1.4em;
   font-size: 0.8rem;
 }
-.lootLog-menu-icon {
+.prices-menu-icon {
   width: 1.4em;
 }
-.lootLog-menu-item {
+.prices-menu-item {
   @extend .no-spacing;
   min-height: 2em;
 }

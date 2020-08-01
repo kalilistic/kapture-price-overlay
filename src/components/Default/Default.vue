@@ -43,13 +43,14 @@ export default {
     }
   },
   mounted() {
-    this.$store.commit("resetPriceCheck");
+    this.$store.commit("resetPriceData");
   }
 };
 </script>
 
 <style scoped lang="scss">
 .default {
+  @extend .default-border;
   @extend .align-center;
   @extend .no-line-break;
   border-top: 0;

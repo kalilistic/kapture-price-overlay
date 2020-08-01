@@ -1,6 +1,9 @@
 import store from "../store";
 
-export function formatNumber(number) {
+export function formatNumber(
+  number,
+  precision = store.state.settings.precision
+) {
   let digitSep = store.getters.digitSeps[store.state.settings.digitSepId].sep;
   let decimalSep =
     store.getters.decimalSeps[store.state.settings.decimalSepId].sep;
@@ -14,7 +17,7 @@ export function formatNumber(number) {
     return num;
   }
   let num = number.toString();
-  num = updatePrecision(num);
+  num = updatePrecision(num, precision);
   if (num.includes(".")) {
     let numArr = num.split(".");
     numArr[0] = addDigitSeparators(numArr[0], digitSep);
@@ -25,7 +28,7 @@ export function formatNumber(number) {
   return num;
 }
 
-function isNumber(number) {
+export function isNumber(number) {
   return isFinite(number);
 }
 
@@ -60,6 +63,6 @@ function addDigitSeparators(number, sep) {
   return num.replace(/(\d)(?=(\d{3})+$)/g, "$1" + sep);
 }
 
-function updatePrecision(number) {
-  return parseFloat(number).toFixed(store.state.settings.precision);
+function updatePrecision(number, precision) {
+  return parseFloat(number).toFixed(precision);
 }

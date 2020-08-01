@@ -28,9 +28,12 @@ export const settings = {
 
 function initialState() {
   let state = {
+    collapsed: false,
     backgroundColor: "#1e1e1e",
     fontColor: "#ebffff",
     opacity: 85,
+    excludeDupes: true,
+    maxItems: 10,
     abbreviateNumbers: false,
     precision: 0,
     digitSepId: 2,

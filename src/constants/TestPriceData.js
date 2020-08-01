@@ -1,4 +1,4 @@
-let TestLootData = [
+let TestPriceData = [
   {
     message: {
       kaptureEvent: {
@@ -13,7 +13,9 @@ let TestLootData = [
             listingsCount: "3",
             averagePrice: "41493.4",
             averagePriceNQ: "0",
-            averagePriceHQ: "41493.4"
+            averagePriceHQ: "41493.4",
+            saleVelocityNQ: "1.1428571428571428",
+            saleVelocityHQ: "0.2857142857142857"
           }
         }
       }
@@ -33,7 +35,9 @@ let TestLootData = [
             listingsCount: "12",
             averagePrice: "30895.55",
             averagePriceNQ: "30419",
-            averagePriceHQ: "0"
+            averagePriceHQ: "0",
+            saleVelocityNQ: 1.1428571428571428,
+            saleVelocityHQ: 0.2857142857142857
           }
         }
       }
@@ -53,7 +57,9 @@ let TestLootData = [
             listingsCount: "37",
             averagePrice: "3893.3",
             averagePriceNQ: "3893.3",
-            averagePriceHQ: "0"
+            averagePriceHQ: "0",
+            saleVelocityNQ: 1.1428571428571428,
+            saleVelocityHQ: 0.2857142857142857
           }
         }
       }
@@ -64,7 +70,7 @@ let TestLootData = [
       kaptureEvent: {
         eventType: "ObtainLoot",
         item: {
-          id: 25191,
+          id: 25192,
           properName: "Wolf Robe",
           vendorBuyPrice: "6760",
           isHQ: false,
@@ -73,7 +79,9 @@ let TestLootData = [
             listingsCount: 0,
             averagePrice: null,
             averagePriceNQ: null,
-            averagePriceHQ: null
+            averagePriceHQ: null,
+            saleVelocityNQ: 1.1428571428571428,
+            saleVelocityHQ: 0.2857142857142857
           }
         }
       }
@@ -81,4 +89,4 @@ let TestLootData = [
   }
 ];
 
-export default TestLootData;
+export default TestPriceData;

@@ -11,7 +11,7 @@
 
 ## Background
 
-kapture price is a loot overlay for use with ACT for FFXIV and the Kapture plugin. This overlay shows the vendor and current market board average for any tradeable items you obtain or search for. Market board data is <a href="https://universalis.app/">powered by Universalis</a>.
+kapture price is a loot overlay for use with ACT for FFXIV and the Kapture plugin. This overlay shows market board data for any items you obtain or search for. Market board data is <a href="https://universalis.app/">powered by Universalis</a>.
 
 ## Preview
 
@@ -19,11 +19,12 @@ kapture price is a loot overlay for use with ACT for FFXIV and the Kapture plugi
 
 ## Key Features
 
-* Shows vendor / market board average for obtained items.
-* Shows vendor / market board average for items you search for.
+* Shows market board average for obtained items.
+* Shows market board average for items you search for.
 * Shows high-quality or normal-quality average based on item.
-* Click on item to open Universalis page.
+* Click on an item to view additional info including vendor price.
 * Customize layout including how numbers are displayed.
+* Customize how many items display and to exclude duplicates.
 * Support for English, French, German, and Japanese.
 
 ## How To Install

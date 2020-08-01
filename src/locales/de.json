@@ -18,6 +18,7 @@
   "views": {
     "general-style": "Allgemeiner Stil",
     "numbers": "Zahlenformat",
+    "filters": "Filter",
     "advanced": "Fortgeschrittene"
   },
   "settings": {
@@ -25,6 +26,8 @@
     "precision": "Präzision",
     "digit-sep": "Ziffernabscheider",
     "decimal-sep": "Dezimaltrennzeichen",
+    "max-items": "Max Artikel",
+    "exclude-dupes": "Dupes ausschließen",
     "language": "Sprache",
     "font-color": "Schriftfarbe",
     "opacity": "Opazität",
@@ -32,9 +35,10 @@
     "always-show-splash": "Splash immer anzeigen",
     "show-discord": "Discord Info anzeigen"
   },
-  "table": {
-    "name": "Name",
-    "vendor": "Verkäuferin",
-    "mb-average": "MB Mittlere"
+  "price": {
+    "last-updated": "Letzte Aktualisierung",
+    "vendor-price": "Verkäufer",
+    "daily-sales": "Tägliche Verkäufe",
+    "listing-count": "Auflistung Anzahl"
   }
 }

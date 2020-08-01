@@ -38,6 +38,7 @@ export default {
 
 <style lang="scss">
 .settings {
+  @extend .default-border;
   @extend .no-line-break;
   @extend .no-spacing;
   border-top: 0;
