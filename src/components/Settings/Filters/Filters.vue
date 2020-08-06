@@ -14,6 +14,14 @@
       v-bind:formatter="'{value}'"
       @change="settings.maxItems = $event"
     />
+    <Slider
+      label="settings.max-days"
+      v-bind:min="1"
+      v-bind:max="180"
+      v-bind:initial-slider-value="settings.maxDays"
+      v-bind:formatter="'{value}'"
+      @change="settings.maxDays = $event"
+    />
     <SettingButtons @reset="reset" @update="update" />
   </v-content>
 </template>
@@ -30,6 +38,7 @@ export default {
     return {
       settings: {
         maxItems: this.$store.state.settings.maxItems,
+        maxDays: this.$store.state.settings.maxDays,
         excludeDupes: this.$store.state.settings.excludeDupes
       }
     };

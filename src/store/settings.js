@@ -34,6 +34,7 @@ function initialState() {
     opacity: 85,
     excludeDupes: true,
     maxItems: 10,
+    maxDays: 60,
     abbreviateNumbers: false,
     precision: 0,
     digitSepId: 2,

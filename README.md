@@ -25,6 +25,7 @@ kapture price is a loot overlay for use with ACT for FFXIV and the Kapture plugi
 * Click on an item to view additional info including vendor price.
 * Customize layout including how numbers are displayed.
 * Customize how many items display and to exclude duplicates.
+* Filter out old upload data (default is 60 days).
 * Support for English, French, German, and Japanese.
 
 ## How To Install

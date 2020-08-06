@@ -9,9 +9,10 @@ export function setLocale(context) {
     getLanguageId().then(languageId => {
       let pluginLanguage = languages[languageId];
       context.$root.$i18n.locale = pluginLanguage.locale;
+      moment.locale(context.$root.$i18n.locale);
     });
   } else {
     context.$root.$i18n.locale = language.locale;
+    moment.locale(context.$root.$i18n.locale);
   }
-  moment.locale(context.$root.$i18n.locale);
 }

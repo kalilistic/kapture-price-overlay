@@ -27,6 +27,7 @@
     "digit-sep": "桁区切り",
     "decimal-sep": "小数点区切り",
     "max-items": "最大アイテム",
+    "max-days": "\n最大日数",
     "exclude-dupes": "デュープを除外",
     "language": "言語",
     "font-color": "フォント色",
@@ -37,7 +38,9 @@
   },
   "price": {
     "last-updated": "最終更新",
-    "vendor-price": "ベンダー",
+    "last-updated-days": "更新後の日数",
+    "market-price": "市場価格",
+    "vendor-price": "ベンダー価格",
     "daily-sales": "毎日の販売",
     "listing-count": "リスト数"
   }

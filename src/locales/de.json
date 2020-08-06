@@ -27,6 +27,7 @@
     "digit-sep": "Ziffernabscheider",
     "decimal-sep": "Dezimaltrennzeichen",
     "max-items": "Max Artikel",
+    "max-days": "Max Tage",
     "exclude-dupes": "Dupes ausschließen",
     "language": "Sprache",
     "font-color": "Schriftfarbe",
@@ -37,7 +38,9 @@
   },
   "price": {
     "last-updated": "Letzte Aktualisierung",
-    "vendor-price": "Verkäufer",
+    "last-updated-days": "Tage seit dem Update",
+    "market-price": "Marktpreis",
+    "vendor-price": "Herstellerpreis",
     "daily-sales": "Tägliche Verkäufe",
     "listing-count": "Auflistung Anzahl"
   }

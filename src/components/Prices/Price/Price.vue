@@ -15,7 +15,7 @@
               <v-flex class="info-container">
                 <v-layout column class="right-info">
                   <v-flex>
-                    {{ price.marketBoardPrice }}
+                    {{ price.marketPriceDisplay }}
                   </v-flex>
                 </v-layout>
               </v-flex>
@@ -60,8 +60,16 @@ export default {
           value: this.price.lastUploadTime
         },
         {
+          title: this.$t("price.last-updated-days"),
+          value: this.price.daysAgo
+        },
+        {
           title: this.$t("price.vendor-price"),
           value: this.price.vendorPrice
+        },
+        {
+          title: this.$t("price.market-price"),
+          value: this.price.marketPriceActual
         },
         {
           title: this.$t("price.daily-sales"),

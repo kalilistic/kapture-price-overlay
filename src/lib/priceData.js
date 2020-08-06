@@ -1,6 +1,6 @@
 import TestPriceData from "../constants/TestPriceData";
 import { formatNumber } from "./numbers";
-import { formatDate } from "./dates";
+import { calcDays, formatDate } from "./dates";
 import store from "../store";
 
 export function AddTestPriceData(context) {
@@ -8,6 +8,7 @@ export function AddTestPriceData(context) {
   TestPriceData.forEach(function(entry) {
     let priceData = parsePriceData(entry);
     if (priceData !== null) {
+      excludeOldPrices(priceData);
       context.$store.commit("updatePriceData", priceData);
     }
   });
@@ -31,7 +32,7 @@ export function parsePriceData(data) {
   };
   if (data["message"]["kaptureEvent"]["item"]["isHQ"] === true) {
     priceData.itemName = priceData.itemName + " (HQ)";
-    priceData.marketBoardPrice = formatNumber(
+    priceData.marketPriceDisplay = formatNumber(
       data["message"]["kaptureEvent"]["item"]["marketBoard"]["averagePriceHQ"]
     );
     priceData.saleVelocity = formatNumber(
@@ -39,7 +40,7 @@ export function parsePriceData(data) {
       2
     );
   } else {
-    priceData.marketBoardPrice = formatNumber(
+    priceData.marketPriceDisplay = formatNumber(
       data["message"]["kaptureEvent"]["item"]["marketBoard"]["averagePriceNQ"]
     );
     priceData.saleVelocity = formatNumber(
@@ -47,9 +48,11 @@ export function parsePriceData(data) {
       2
     );
   }
-  const lastUpload =
+  priceData.lastUploadTime =
     data["message"]["kaptureEvent"]["item"]["marketBoard"]["lastUploadTime"];
-  priceData.lastUploadTime = formatDate(lastUpload);
+  priceData.marketPriceActual = priceData.marketPriceDisplay;
+  excludeOldPrices(priceData);
+  priceData.lastUploadTime = formatDate(priceData.lastUploadTime);
   priceData.listingsCount =
     data["message"]["kaptureEvent"]["item"]["marketBoard"]["listingsCount"];
   removeDupes(priceData);
@@ -62,6 +65,12 @@ export function removeDupes(priceData) {
   store.commit("removePriceData", priceData);
 }
 
+export function excludeOldPrices(priceData) {
+  priceData.daysAgo = calcDays(priceData.lastUploadTime);
+  if (priceData.daysAgo > store.state.settings.maxDays) {
+    priceData.marketPriceDisplay = "---";
+  }
+}
 export function consolidateData() {
   if (!store.state.settings.maxItems) return;
   store.commit("consolidatePriceData", store.state.settings.maxItems);

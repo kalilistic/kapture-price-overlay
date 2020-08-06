@@ -27,6 +27,7 @@
     "digit-sep": "Digit Separator",
     "decimal-sep": "Decimal Separator",
     "max-items": "Max Items",
+    "max-days": "Max Days",
     "exclude-dupes": "Exclude Dupes",
     "language": "Language",
     "font-color": "Font Color",
@@ -37,7 +38,9 @@
   },
   "price": {
     "last-updated": "Last Updated",
-    "vendor-price": "Vendor",
+    "last-updated-days": "Days Since Update",
+    "market-price": "Market Price",
+    "vendor-price": "Vendor Price",
     "daily-sales": "Daily Sales",
     "listing-count": "Listing Count"
   }

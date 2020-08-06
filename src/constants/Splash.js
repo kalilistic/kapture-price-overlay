@@ -1,10 +1,9 @@
 let SplashMessage = {
-  version: 2,
-  title: "some improvements",
+  version: 3,
+  title: "filter old data",
   messages: [
-    "- Try clicking an item to see more info",
-    "- New settings to filter max items / remove dupes",
-    "- Minimize overlay added to header"
+    "Added filter for items with old upload data.",
+    "Filter is configurable with 60 days by default."
   ]
 };
 export default SplashMessage;
