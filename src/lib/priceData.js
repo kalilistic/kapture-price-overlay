@@ -8,7 +8,7 @@ export function AddTestPriceData(context) {
   TestPriceData.forEach(function(entry) {
     let priceData = parsePriceData(entry);
     if (priceData !== null) {
-      excludeOldPrices(priceData);
+      priceData.daysAgo = "---";
       context.$store.commit("updatePriceData", priceData);
     }
   });
