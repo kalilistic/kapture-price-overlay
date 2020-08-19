@@ -3,9 +3,7 @@
     "title": "Kapture Prix"
   },
   "default": {
-    "waiting": "en attendant la rencontre...",
-    "questions": "questions / idées?",
-    "discord": "ejoindre le serveur discord"
+    "waiting": "en attendant la rencontre..."
   },
   "actions": {
     "view-loot": "Voir le butin",
@@ -33,8 +31,7 @@
     "font-color": "Couleur de la police",
     "opacity": "Opacité",
     "logging": "Activer la journalisation",
-    "always-show-splash": "Toujours montrer la bienvenue",
-    "show-discord": "Afficher les informations DISCORD"
+    "always-show-splash": "Toujours montrer la bienvenue"
   },
   "price": {
     "last-updated": "Dernière mise à jour",

@@ -3,9 +3,7 @@
     "title": "Kapture Price"
   },
   "default": {
-    "waiting": "waiting for loot..",
-    "questions": "questions / ideas?",
-    "discord": "join the discord server"
+    "waiting": "waiting for loot.."
   },
   "actions": {
     "view-loot": "View Loot",
@@ -33,8 +31,7 @@
     "font-color": "Font Color",
     "opacity": "Opacity",
     "logging": "Enable Logging",
-    "always-show-splash": "Always Show Splash",
-    "show-discord": "Show Discord Info"
+    "always-show-splash": "Always Show Splash"
   },
   "price": {
     "last-updated": "Last Updated",

@@ -42,8 +42,7 @@ function initialState() {
     languageId: 0,
     logging: false,
     alwaysShowSplash: false,
-    latestSplashSeen: 0,
-    showDiscord: true
+    latestSplashSeen: 0
   };
   calcDerivedProps(state);
   return state;

@@ -3,9 +3,7 @@
     "title": "Kapture Preis"
   },
   "default": {
-    "waiting": "warten auf begegnung...",
-    "questions": "fragen / ideen?",
-    "discord": "tritt dem zwietracht-server bei"
+    "waiting": "warten auf begegnung..."
   },
   "actions": {
     "view-loot": "Beute zurücksetzen",
@@ -33,8 +31,7 @@
     "font-color": "Schriftfarbe",
     "opacity": "Opazität",
     "logging": "Aktiviere das Logging",
-    "always-show-splash": "Splash immer anzeigen",
-    "show-discord": "Discord Info anzeigen"
+    "always-show-splash": "Splash immer anzeigen"
   },
   "price": {
     "last-updated": "Letzte Aktualisierung",

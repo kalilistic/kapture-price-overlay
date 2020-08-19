@@ -3,9 +3,7 @@
     "title": "Kapture価格チェック"
   },
   "default": {
-    "waiting": "出会いを待っています..",
-    "questions": "質問/アイデア？",
-    "discord": "discordサーバーに参加"
+    "waiting": "出会いを待っています.."
   },
   "actions": {
     "view-loot": "戦利品を見る",
@@ -33,8 +31,7 @@
     "font-color": "フォント色",
     "opacity": "不透明度",
     "logging": "ロギングを有効にします",
-    "always-show-splash": "常にウェルカムを表示",
-    "show-discord": "DISCORD情報を表示"
+    "always-show-splash": "常にウェルカムを表示"
   },
   "price": {
     "last-updated": "最終更新",

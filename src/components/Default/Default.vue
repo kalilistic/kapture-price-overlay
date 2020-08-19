@@ -2,18 +2,16 @@
   <v-content class="default" :style="defaultStyle">
     <Splash class="default-section" v-show="showSplash" />
     <Waiting class="default-section" />
-    <Discord class="default-section" v-show="showDiscord" />
   </v-content>
 </template>
 
 <script>
 import Splash from "./Splash/Splash";
-import Discord from "./Discord/Discord";
 import SplashMessage from "../../constants/Splash";
 import Waiting from "./Waiting/Waiting";
 export default {
   name: "Default",
-  components: { Discord, Waiting, Splash },
+  components: { Waiting, Splash },
   computed: {
     defaultStyle() {
       return {
@@ -30,9 +28,6 @@ export default {
         return true;
       }
       return false;
-    },
-    showDiscord() {
-      return this.$store.state.settings.showDiscord;
     }
   },
   methods: {

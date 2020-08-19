@@ -6,7 +6,6 @@
 <p align="center">
   <a href="https://kalilistic.github.io/kapture-price-overlay"><img src="https://img.shields.io/website?down_color=red&down_message=offline&label=overlay&up_color=brightgreen&up_message=online&url=https%3A%2F%2Fkalilistic.github.io%2Fkapture-price-overlay"></a>
   <a href="https://github.com/kalilistic/kapture-price-overlay/blob/master/LICENSE"><img src="https://img.shields.io/github/license/kalilistic/kapture-price-overlay?color=lightgrey"></a>
-  <a href="https://discord.gg/ftn4k7x"><img src="https://img.shields.io/badge/chat-on%20discord-7289da.svg"></a>
 </p>
 
 ## Background
